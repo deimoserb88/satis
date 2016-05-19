@@ -1,0 +1,17 @@
+{
+  "name": "satis",
+  "description": "satisfaccion de estudiantes",
+  "main": "",
+  "authors": [
+    "ERB"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
