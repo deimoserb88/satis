@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link type="image/x-icon" href="http://www.ucol.mx/cms/img/favicon.ico" rel="icon" >
 	<title>UCol</title>
     <!-- Fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
@@ -11,9 +12,12 @@
 
     <!-- Styles -->
     <link href="{{ url('assets/vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url('assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') }}" rel="stylesheet"> 	
+    <link href="{{ url('assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') }}" rel="stylesheet"> 
+    <link href="http://www.ucol.mx/cms/headerfooterapp.css" rel="stylesheet">	
  	
  	@yield('estilos') <!--Para agregar estilos propios de cada modulo-->
+
+
 
     <style>
         body {
@@ -109,6 +113,9 @@
     <script src="http://www.ucol.mx/cms/js/jquery.slides.js"></script> 
     <script src="http://www.ucol.mx/cms/js/main.js"></script>
     <script src="http://www.ucol.mx/cms/js/custom.js"></script>
+	
+    <script src="{{ url('assets/vendor/jquery/dist/jquery.min.js') }}"></script>
+    <script src="{{ url('assets/vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     @yield('scripts') <!--Para agregar scripts propios de cada modulo-->
 
