@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace SATIS\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
