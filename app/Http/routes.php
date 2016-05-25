@@ -19,6 +19,10 @@ Route::auth();
 
 Route::get('/home', 'HomeController@index');
 
-Route::auth();
+Route::get('ayuda',function(){
+	return view('encuesta.encuesta_ayuda');
+});
 
-Route::get('/home', 'HomeController@index');
+Route::get('e1', function(){
+	return view('encuesta.encuesta_1');
+});

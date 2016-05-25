@@ -7,17 +7,13 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
     <link type="image/x-icon" href="http://www.ucol.mx/cms/img/favicon.ico" rel="icon" />
-    <link href="http://www.ucol.mx/cms/css/bootstrap3.css" rel="stylesheet" />
-    <link href="http://www.ucol.mx/cms/headerfooterapp.css" rel="stylesheet" />
+
+    {!! Html::style('https://fonts.googleapis.com/css?family=Lato:100,300,400,700') !!}<!-- Fonts -->
+    {!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') !!}<!-- Iconos -->
+    {!! Html::style('assets/vendor/bootstrap/dist/css/bootstrap.min.css') !!}    
+    {!! Html::style('http://www.ucol.mx/cms/headerfooterapp.css') !!}
+    {!! Html::style('assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') !!}
 
     <style>
         body {
@@ -76,14 +72,16 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/') }}">Inicio</a></li>
+                    <li><a href="{{ url('/') }}">Inicio <i class="fa fa-btn fa-home"></i></a></li> 
+                    <li><a href="{{ url('ayuda') }}">Ayuda <i class="fa fa-btn fa-question-circle"></i></a></li> 
                 </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
+                    @yield('menu_items')
                     <!-- Authentication Links -->
                     @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Iniciar sesión</a></li>                    
+                        <li><a href="{{ url('/login') }}"><i class="fa fa-btn fa-sign-in"></i>Iniciar sesión</a></li>                    
                     @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
