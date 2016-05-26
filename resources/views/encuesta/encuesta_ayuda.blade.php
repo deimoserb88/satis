@@ -13,13 +13,10 @@
 				Lee cuidadosamente cada uno de los apartados y responde a los enunciados se&ntilde;alando 
     			la opci&oacute;n que mejor refleja tu grado de satisfacci&oacute;n. Tienes 
 			    5 opciones de respuesta y s&oacute;lo puedes marcar una por cada oraci&oacute;n 
-			    <i>(ejemplo 1)</i>. En el apartado de infraestructura y servicios universitarios 
-			    tendr&aacute;s que contestar en dos columnas, la de frecuencia y la de satisfacci&oacute;n, 
-			    es decir, que tanto usas el servicio y que tan satisfecho est&aacute;s con 
-			    &eacute;l <i>(ejemplo 2)</i>.</p>
+			    <i>(ejemplo 1)</i>. En el apartado final tendrás que responder SI o NO a las preguntas que se teharán <i>(ejemplo 2)</i>.</p>
 			    <div class="row">
-				    <div class="col-md-3 col-md-offset-2">
-						<b>Satisfacción</b>
+				    <div class="col-md-3 col-md-offset-4">
+						<b>Criterio de satisfacción</b>
 						<ol>
 							<li>-Muy satisfecho</li>
 							<li>-Satisfecho</li>
@@ -27,16 +24,6 @@
 							<li>-Insatisfecho</li>
 							<li>-Muy insatisfecho</li>
 						</ol>
-				    </div>
-				    <div class="col-md-3 col-md-offset-2">
-						<b>Importancia</b>
-						<ol>
-							<li>-Muy importante</li>
-							<li>-Importente</li>
-							<li>-Neutral</li>
-							<li>-Poco importante</li>
-							<li>-Nada importante</li>
-						</ol>				    	
 				    </div>
 			    </div>
 			    <hr>
@@ -63,7 +50,32 @@
 			    		<td class="text-center"><input type="radio" disabled="disabled"></td>
 			    	</tr>
 			    	</tbody>
-			    </table>
+			    </table>	
+				<hr>
+				<h5><u>Ejemplo 2</u></h5>
+				<table class="table table-striped table-hover">
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th class="text-center"><img src="{{ url('images/si.png') }}"></th>
+							<th class="text-center"><img src="{{ url('images/no.png') }}"></th>
+						</tr>
+						<tr class="bg-primary">
+							<th>Responde a las siguientes preguntas</th>
+							<th class="text-center">SI</th>
+							<th class="text-center">NO</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Recomendaría a mis amigos, familiares o conocidos estudiar en la U de C</td>
+							<td class="text-center"><input type="radio" disabled="disabled"></td>
+							<td class="text-center"><input type="radio" disabled="disabled" checked="checked"></td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>
+				<button class="btn btn-primary" onclick="window.location.href='/'">Volver <i class="fa fa-btn fa-reply"></i></button>
 			</div>
 		</div>
 	</div>

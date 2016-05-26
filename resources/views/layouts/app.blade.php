@@ -11,7 +11,7 @@
 
     {!! Html::style('https://fonts.googleapis.com/css?family=Lato:100,300,400,700') !!}<!-- Fonts -->
     {!! Html::style('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css') !!}<!-- Iconos -->
-    {!! Html::style('assets/vendor/bootstrap/dist/css/bootstrap.min.css') !!}    
+    {!! Html::style('assets/vendor/bootstrap/dist/css/bootstrap.min.css') !!}          
     {!! Html::style('http://www.ucol.mx/cms/headerfooterapp.css') !!}
     {!! Html::style('assets/vendor/bootstrap/dist/css/bootstrap-theme.min.css') !!}
 
@@ -159,8 +159,8 @@
     <script src="http://www.ucol.mx/cms/js/main.js"></script>
     <script src="http://www.ucol.mx/cms/js/custom.js"></script>
     <!-- JavaScripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    {!! Html::script('assets/vendor/jquery/dist/jquery.min.js') !!}
+    {!! Html::script('assets/vendor/bootstrap/dist/js/bootstrap.min.js') !!}
+
 </body>
 </html>
